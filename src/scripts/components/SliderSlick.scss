@@ -41,6 +41,7 @@
   max-width: 600px;
   @include breakpoint(tablet) {
     margin-right: -150%;
+    margin-bottom: 60px;
   }
 }
 .btitle{
@@ -49,14 +50,15 @@
   font-size: 9px;
   letter-spacing: 0.62em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .title{
   margin: 0;
   font-size: 62px;
   line-height: 64px;
   font-family: 'Playfair Display', serif;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  letter-spacing: 0.017em;
 }
 .descr{
   font-size: 14px;

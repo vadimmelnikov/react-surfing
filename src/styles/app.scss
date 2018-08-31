@@ -68,7 +68,7 @@ body {
 	height: 100%;
 	background-color: $bord;
 	position: absolute;
-	left: 20px;
+	left: 18px;
 	top: 0;
 	@include breakpoint(laptop) {
 	  left: 105px;
@@ -80,7 +80,7 @@ body {
 	height: 100%;
 	background-color: $bord;
 	position: absolute;
-	right: 20px;
+	right: 18px;
 	top: 0;
 	@include breakpoint(laptop) {
 	  right: 105px;

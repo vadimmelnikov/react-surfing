@@ -1,0 +1,33 @@
+
+@import "../../styles/variables";
+/*
+ * **************************
+ * file: ./_mixins
+ * **************************
+ */
+@import "../../styles/mixins";
+
+.list{
+  @include uldev();
+  display: flex;
+  &__item{
+    position: relative;
+    margin-right: 45px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__link{
+    font-family: 'League Spartan';
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 0.62em;
+    color: $black;
+    padding: 5px 0;
+    transition: all 0.2s;
+    &:hover{
+      opacity: 0.4;
+    }
+  }
+}

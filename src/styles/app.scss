@@ -1,0 +1,138 @@
+/*
+ * **************************
+ * file: ./_variables
+ * **************************
+ */
+@import "_variables";
+/*
+ * **************************
+ * file: ./_mixins
+ * **************************
+ */
+@import "_mixins";
+@import "_normalize.scss";
+html {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  //font-family: 'Playfair Display', serif;
+  height: 100%;
+  margin: 0;
+  color: $black;
+  font-size: 16px;
+}
+.title{
+  color: rosybrown;
+}
+.tools{
+  color: tomato;
+  font-size: 18px;
+}
+.container{
+  margin: 0 auto;
+  padding-left: 107px;
+  padding-right: 107px;
+  @include boxsize;
+}
+.wrapper-bgr{
+  border-left: 1px solid $bord;
+  border-right: 1px solid $bord;
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  @include boxsize;
+  &:after{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: $bord;
+    position: absolute;
+    left: 105px;
+    top: 0;
+  }
+  &:before{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: $bord;
+    position: absolute;
+    right: 105px;
+    top: 0;
+  }
+  & span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    &:after{
+      content: '';
+      width: 1px;
+      height: 100%;
+      background-color: $bord;
+      position: absolute;
+      left: calc(25% + 58px);
+      top: 0;
+    }
+    &:before{
+      content: '';
+      width: 1px;
+      height: 100%;
+      background-color: $bord;
+      position: absolute;
+      right: calc(25% + 58px);
+      top: 0;
+    }
+    & i{
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: $bord;
+      margin: auto;
+    }
+  }
+}
+
+/*
+ * **************************
+ * file: ./_buttons.scss
+ * **************************
+ */
+@import "_buttons.scss";
+
+//@import "_header.scss";
+//@import "_footer.scss";
+
+/*
+ * **************************
+ * file: ./_main.scss
+ * **************************
+ */
+@import "_main.scss";
+/*
+ * **************************
+ * file: ./_form.scss
+ * **************************
+ */
+@import "_form.scss";
+
+/*
+ * **************************
+ * file: ./_slider.scss
+ * **************************
+ */
+@import "_slider.scss";

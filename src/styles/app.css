@@ -780,3 +780,14 @@ body {
 /* line 279, src/styles/_slider.scss */
 .slick-slide, .slick-slide * {
   outline: none !important; }
+
+/* line 285, src/styles/_slider.scss */
+.slick-list {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+/* line 289, src/styles/_slider.scss */
+.slick-slide {
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box; }

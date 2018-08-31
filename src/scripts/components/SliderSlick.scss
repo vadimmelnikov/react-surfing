@@ -56,6 +56,7 @@
 .sliderwrap{
   position: relative;
   margin-bottom: 60px;
+  overflow: hidden;
 }
 .list{
   @include uldev;

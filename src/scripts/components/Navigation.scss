@@ -9,12 +9,24 @@
 
 .list{
   @include uldev();
-  display: flex;
+  @include boxsize();
+  position: relative;
+  text-align: right;
+  @include breakpoint(tablet) {
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
   &__item{
     position: relative;
-    margin-right: 45px;
-    &:last-child{
-      margin-right: 0;
+    margin-left: 15px;
+    display: inline-block;
+    @include breakpoint(tablet) {
+      display: block;
+      margin-left: 45px;
+    }
+    &:first-child{
+      margin-left: 0;
     }
   }
   &__link{

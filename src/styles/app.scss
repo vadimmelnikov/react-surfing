@@ -38,9 +38,13 @@ body{
 }
 .container{
   margin: 0 auto;
-  padding-left: 107px;
-  padding-right: 107px;
+  padding-left: 20px;
+  padding-right: 20px;
   @include boxsize;
+    @include breakpoint(laptop) {
+      padding-left: 107px;
+      padding-right: 107px;
+    }
 }
 .wrapper-bgr{
   border-left: 1px solid $bord;
@@ -56,8 +60,11 @@ body{
     height: 100%;
     background-color: $bord;
     position: absolute;
-    left: 105px;
+    left: 20px;
     top: 0;
+    @include breakpoint(laptop) {
+      left: 105px;
+    }
   }
   &:before{
     content: '';
@@ -65,8 +72,11 @@ body{
     height: 100%;
     background-color: $bord;
     position: absolute;
-    right: 105px;
+    right: 20px;
     top: 0;
+    @include breakpoint(laptop) {
+      right: 105px;
+    }
   }
   & span{
     position: absolute;
@@ -82,8 +92,11 @@ body{
       height: 100%;
       background-color: $bord;
       position: absolute;
-      left: calc(25% + 58px);
+      left: calc(25% + 8px);
       top: 0;
+      @include breakpoint(laptop) {
+        left: calc(25% + 58px);
+      }
     }
     &:before{
       content: '';
@@ -91,8 +104,11 @@ body{
       height: 100%;
       background-color: $bord;
       position: absolute;
-      right: calc(25% + 58px);
+      right: calc(25% + 8px);
       top: 0;
+      @include breakpoint(laptop) {
+        right: calc(25% + 58px);
+      }
     }
     & i{
       position: absolute;

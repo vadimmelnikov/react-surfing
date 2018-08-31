@@ -108,7 +108,7 @@
 .slick-next, .slick-prev {
   font-size: 0;
   line-height: 0;
-  bottom: 52px;
+  bottom: 0;
   width: 20px;
   height: 20px;
   -webkit-transform: translate(0, -50%);
@@ -120,6 +120,13 @@
   outline: 0;
   z-index: 4;
   background: transparent;
+  transition: opacity 0.2s;
+  &:hover{
+    opacity: 0.8;
+  }
+  @include breakpoint(tablet) {
+    bottom: 52px;
+  }
 }
 
 .slick-next:focus, .slick-next:hover, .slick-prev:focus, .slick-prev:hover {
@@ -183,7 +190,11 @@
 }
 
 .slick-next {
-  left: 60px;
+  right: 0;
+  @include breakpoint(tablet) {
+    left: 60px;
+    right: auto;
+  }
   &:before{
     content: '';
     width: 15px;

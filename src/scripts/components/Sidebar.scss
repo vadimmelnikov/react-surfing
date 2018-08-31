@@ -9,23 +9,49 @@
 
 .sidebar{
   position: fixed;
-  right: 0;
-  width: 107px;
-  top: 0;
-  height: 100%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #fff;
+  padding: 0 20px;
+  @include boxsize;
+  @include breakpoint(laptop) {
+    padding: 0;
+    left: auto;
+    right: 0;
+    width: 107px;
+    top: 0;
+    height: 100%;
+    background-color: transparent;
+  }
 }
 .list{
   @include uldev;
   position: relative;
-  background-color: #fff;
-  border-left: 1px solid $bord;
   @include boxsize;
-  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  margin-right: -10px;
+  @include breakpoint(laptop) {
+    margin-right: 0;
+    padding-bottom: 15px;
+    display: block;
+    background-color: #fff;
+    border-left: 1px solid $bord;
+  }
   &__item{
-    margin-bottom: 15px;
-    text-align: center;
+    margin-right: 15px;
+    @include breakpoint(laptop) {
+      text-align: center;
+      margin-bottom: 15px;
+      margin-right: 0;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
     &:last-child{
-      margin-bottom: 0;
+      margin-right: 0;
     }
   }
   &__link{
@@ -40,27 +66,42 @@
 .grid{
   @include uldev;
   display: flex;
-  flex-direction: column;
-  align-content: space-between;
+  flex-direction: row;
   justify-content: space-between;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
+  align-items: center;
+  @include breakpoint(laptop) {
+    align-items: stretch;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
 }
 .vertical{
   font-family: 'League Spartan';
   opacity: 0.2;
   font-size: 9px;
   text-transform: uppercase;
-  float: left;
-  transform: rotate(-90deg);
-  transform-origin: left center;
-  top: 286px;
-  left: 53px;
-  position: relative;
-  width: 247px;
-  letter-spacing: 0.6em;
+  letter-spacing: 0.06em;
   user-select: none;
+  line-height: 9px;
+  display: none;
+  @include breakpoint(phablet) {
+    display: block;
+  }
+  @include breakpoint(laptop) {
+    line-height: initial;
+    transform: rotate(-90deg);
+    transform-origin: left center;
+    top: 286px;
+    letter-spacing: 0.6em;
+    left: 53px;
+    position: relative;
+    width: 247px;
+    float: left;
+  }
 }

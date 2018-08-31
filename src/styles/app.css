@@ -440,11 +440,16 @@ body {
 /* line 39, src/styles/app.scss */
 .container {
   margin: 0 auto;
-  padding-left: 107px;
-  padding-right: 107px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box; }
+  @media (min-width: 64em) {
+    /* line 39, src/styles/app.scss */
+    .container {
+      padding-left: 107px;
+      padding-right: 107px; } }
 
-/* line 45, src/styles/app.scss */
+/* line 49, src/styles/app.scss */
 .wrapper-bgr {
   border-left: 1px solid #f5f5f5;
   border-right: 1px solid #f5f5f5;
@@ -453,25 +458,33 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: border-box; }
-  /* line 53, src/styles/app.scss */
+  /* line 57, src/styles/app.scss */
   .wrapper-bgr:after {
     content: '';
     width: 1px;
     height: 100%;
     background-color: #f5f5f5;
     position: absolute;
-    left: 105px;
+    left: 20px;
     top: 0; }
-  /* line 62, src/styles/app.scss */
+    @media (min-width: 64em) {
+      /* line 57, src/styles/app.scss */
+      .wrapper-bgr:after {
+        left: 105px; } }
+  /* line 69, src/styles/app.scss */
   .wrapper-bgr:before {
     content: '';
     width: 1px;
     height: 100%;
     background-color: #f5f5f5;
     position: absolute;
-    right: 105px;
+    right: 20px;
     top: 0; }
-  /* line 71, src/styles/app.scss */
+    @media (min-width: 64em) {
+      /* line 69, src/styles/app.scss */
+      .wrapper-bgr:before {
+        right: 105px; } }
+  /* line 81, src/styles/app.scss */
   .wrapper-bgr span {
     position: absolute;
     width: 100%;
@@ -480,25 +493,33 @@ body {
     left: 0;
     right: 0;
     margin: auto; }
-    /* line 79, src/styles/app.scss */
+    /* line 89, src/styles/app.scss */
     .wrapper-bgr span:after {
       content: '';
       width: 1px;
       height: 100%;
       background-color: #f5f5f5;
       position: absolute;
-      left: calc(25% + 58px);
+      left: calc(25% + 8px);
       top: 0; }
-    /* line 88, src/styles/app.scss */
+      @media (min-width: 64em) {
+        /* line 89, src/styles/app.scss */
+        .wrapper-bgr span:after {
+          left: calc(25% + 58px); } }
+    /* line 101, src/styles/app.scss */
     .wrapper-bgr span:before {
       content: '';
       width: 1px;
       height: 100%;
       background-color: #f5f5f5;
       position: absolute;
-      right: calc(25% + 58px);
+      right: calc(25% + 8px);
       top: 0; }
-    /* line 97, src/styles/app.scss */
+      @media (min-width: 64em) {
+        /* line 101, src/styles/app.scss */
+        .wrapper-bgr span:before {
+          right: calc(25% + 58px); } }
+    /* line 113, src/styles/app.scss */
     .wrapper-bgr span i {
       position: absolute;
       width: 1px;
@@ -638,7 +659,7 @@ body {
 .slick-next, .slick-prev {
   font-size: 0;
   line-height: 0;
-  bottom: 52px;
+  bottom: 0;
   width: 20px;
   height: 20px;
   -webkit-transform: translate(0, -50%);
@@ -649,13 +670,21 @@ body {
   border: none;
   outline: 0;
   z-index: 4;
-  background: transparent; }
+  background: transparent;
+  transition: opacity 0.2s; }
+  /* line 124, src/styles/_slider.scss */
+  .slick-next:hover, .slick-prev:hover {
+    opacity: 0.8; }
+  @media (min-width: 50em) {
+    /* line 108, src/styles/_slider.scss */
+    .slick-next, .slick-prev {
+      bottom: 52px; } }
 
-/* line 140, src/styles/_slider.scss */
+/* line 147, src/styles/_slider.scss */
 .slick-next:before {
   content: ''; }
 
-/* line 146, src/styles/_slider.scss */
+/* line 153, src/styles/_slider.scss */
 .slick-prev:before {
   content: '';
   width: 15px;
@@ -666,7 +695,7 @@ body {
   left: 0;
   transform: rotate(45deg); }
 
-/* line 156, src/styles/_slider.scss */
+/* line 163, src/styles/_slider.scss */
 .slick-prev:after {
   content: '';
   width: 15px;
@@ -677,19 +706,24 @@ body {
   left: 0;
   transform: rotate(-45deg); }
 
-/* line 168, src/styles/_slider.scss */
+/* line 175, src/styles/_slider.scss */
 .slick-prev {
   left: 0; }
 
-/* line 172, src/styles/_slider.scss */
+/* line 179, src/styles/_slider.scss */
 [dir=rtl] .slick-prev {
   right: -25px;
   left: auto; }
 
-/* line 185, src/styles/_slider.scss */
+/* line 192, src/styles/_slider.scss */
 .slick-next {
-  left: 60px; }
-  /* line 187, src/styles/_slider.scss */
+  right: 0; }
+  @media (min-width: 50em) {
+    /* line 192, src/styles/_slider.scss */
+    .slick-next {
+      left: 60px;
+      right: auto; } }
+  /* line 198, src/styles/_slider.scss */
   .slick-next:before {
     content: '';
     width: 15px;
@@ -699,7 +733,7 @@ body {
     top: 14px;
     right: 0;
     transform: rotate(-45deg); }
-  /* line 197, src/styles/_slider.scss */
+  /* line 208, src/styles/_slider.scss */
   .slick-next:after {
     content: '';
     width: 15px;
@@ -710,16 +744,16 @@ body {
     right: 0;
     transform: rotate(45deg); }
 
-/* line 209, src/styles/_slider.scss */
+/* line 220, src/styles/_slider.scss */
 [dir=rtl] .slick-next {
   right: auto;
   left: -25px; }
 
-/* line 218, src/styles/_slider.scss */
+/* line 229, src/styles/_slider.scss */
 .slick-dotted.slick-slider {
   margin-bottom: 30px; }
 
-/* line 222, src/styles/_slider.scss */
+/* line 233, src/styles/_slider.scss */
 .slick-dots {
   bottom: -25px;
   width: 100%;
@@ -727,7 +761,7 @@ body {
   list-style: none;
   text-align: center; }
 
-/* line 230, src/styles/_slider.scss */
+/* line 241, src/styles/_slider.scss */
 .slick-dots li {
   position: relative;
   display: inline-block;
@@ -737,7 +771,7 @@ body {
   padding: 0;
   cursor: pointer; }
 
-/* line 240, src/styles/_slider.scss */
+/* line 251, src/styles/_slider.scss */
 .slick-dots li button {
   font-size: 0;
   line-height: 0;
@@ -751,15 +785,15 @@ body {
   outline: 0;
   background: 0 0; }
 
-/* line 254, src/styles/_slider.scss */
+/* line 265, src/styles/_slider.scss */
 .slick-dots li button:focus, .slick-dots li button:hover {
   outline: 0; }
 
-/* line 258, src/styles/_slider.scss */
+/* line 269, src/styles/_slider.scss */
 .slick-dots li button:focus:before, .slick-dots li button:hover:before {
   opacity: 1; }
 
-/* line 262, src/styles/_slider.scss */
+/* line 273, src/styles/_slider.scss */
 .slick-dots li button:before {
   font-size: 6px;
   line-height: 20px;
@@ -772,21 +806,21 @@ body {
   opacity: .25;
   color: #000; }
 
-/* line 275, src/styles/_slider.scss */
+/* line 286, src/styles/_slider.scss */
 .slick-dots li.slick-active button:before {
   opacity: .75;
   color: #000; }
 
-/* line 279, src/styles/_slider.scss */
+/* line 290, src/styles/_slider.scss */
 .slick-slide, .slick-slide * {
   outline: none !important; }
 
-/* line 285, src/styles/_slider.scss */
+/* line 296, src/styles/_slider.scss */
 .slick-list {
   margin-left: -15px;
   margin-right: -15px; }
 
-/* line 289, src/styles/_slider.scss */
+/* line 300, src/styles/_slider.scss */
 .slick-slide {
   padding-right: 15px;
   padding-left: 15px;

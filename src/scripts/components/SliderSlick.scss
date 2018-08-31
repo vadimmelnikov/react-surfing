@@ -3,32 +3,45 @@
 @import "../../styles/mixins";
 
 .grid{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   @include uldev;
+  @include breakpoint(tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &__item{
     position: relative;
     width: 100%;
     &:last-child{
-      min-height: 573px;
+      min-height: 373px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      box-shadow: -15.898px 25.441px 30px 0px rgba(11, 12, 17, 0.2);
       margin-bottom: 60px;
+      @include breakpoint(tablet) {
+        min-height: 573px;
+        box-shadow: -15.898px 25.441px 30px 0px rgba(11, 12, 17, 0.2);
+      }
     }
     &:first-child{
-      width: 207px;
-      min-width: 207px;
+      @include breakpoint(tablet) {
+        width: 107px;
+        min-width: 107px;
+      }
+      @include breakpoint(laptop) {
+        width: 207px;
+        min-width: 207px;
+      }
     }
   }
 }
 .wrap{
-  margin-right: -150%;
   position: relative;
   z-index: 2;
   max-width: 600px;
+  @include breakpoint(tablet) {
+    margin-right: -150%;
+  }
 }
 .btitle{
   font-family: 'League Spartan';
@@ -52,6 +65,10 @@
   letter-spacing: 0.025em;
   margin: 0;
   font-weight: 300;
+  margin-bottom: 20px;
+  @include breakpoint(tablet) {
+    margin-bottom: 0;
+  }
 }
 .sliderwrap{
   position: relative;
@@ -62,9 +79,17 @@
   @include uldev;
   display: flex;
   position: absolute;
-  bottom: 64px;
-  left: 26px;
+  bottom: 11px;
+  left: 0;
+  right: 0;
+  margin: auto;
   z-index: 3;
+  width: 25px;
+  @include breakpoint(tablet) {
+    bottom: 64px;
+    left: 26px;
+    right: auto;
+  }
   &__item{
     font-size: 10px;
     font-family: 'League Spartan';

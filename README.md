@@ -2,6 +2,6 @@
 
 yarn
 
-yarn sccs
+yarn scss
 
 yarn start

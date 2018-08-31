@@ -409,18 +409,18 @@ td,
 th {
   padding: 0; }
 
-/* line 14, src/styles/app.scss */
+/* line 15, src/styles/app.scss */
 html {
   height: 100%;
   width: 100%; }
 
-/* line 19, src/styles/app.scss */
+/* line 20, src/styles/app.scss */
 img {
   max-width: 100%;
   height: auto;
   display: block; }
 
-/* line 24, src/styles/app.scss */
+/* line 26, src/styles/app.scss */
 body {
   font-family: 'Poppins', sans-serif;
   height: 100%;
@@ -428,28 +428,30 @@ body {
   color: #0b0c11;
   font-size: 16px; }
 
-/* line 32, src/styles/app.scss */
+/* line 35, src/styles/app.scss */
 .title {
   color: rosybrown; }
 
-/* line 35, src/styles/app.scss */
+/* line 39, src/styles/app.scss */
 .tools {
   color: tomato;
   font-size: 18px; }
 
-/* line 39, src/styles/app.scss */
+/* line 44, src/styles/app.scss */
 .container {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding-bottom: 50px; }
   @media (min-width: 64em) {
-    /* line 39, src/styles/app.scss */
+    /* line 44, src/styles/app.scss */
     .container {
+      padding-bottom: 0;
       padding-left: 107px;
       padding-right: 107px; } }
 
-/* line 49, src/styles/app.scss */
+/* line 57, src/styles/app.scss */
 .wrapper-bgr {
   border-left: 1px solid #f5f5f5;
   border-right: 1px solid #f5f5f5;
@@ -458,7 +460,7 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: border-box; }
-  /* line 57, src/styles/app.scss */
+  /* line 65, src/styles/app.scss */
   .wrapper-bgr:after {
     content: '';
     width: 1px;
@@ -468,10 +470,10 @@ body {
     left: 20px;
     top: 0; }
     @media (min-width: 64em) {
-      /* line 57, src/styles/app.scss */
+      /* line 65, src/styles/app.scss */
       .wrapper-bgr:after {
         left: 105px; } }
-  /* line 69, src/styles/app.scss */
+  /* line 77, src/styles/app.scss */
   .wrapper-bgr:before {
     content: '';
     width: 1px;
@@ -481,10 +483,10 @@ body {
     right: 20px;
     top: 0; }
     @media (min-width: 64em) {
-      /* line 69, src/styles/app.scss */
+      /* line 77, src/styles/app.scss */
       .wrapper-bgr:before {
         right: 105px; } }
-  /* line 81, src/styles/app.scss */
+  /* line 89, src/styles/app.scss */
   .wrapper-bgr span {
     position: absolute;
     width: 100%;
@@ -493,7 +495,7 @@ body {
     left: 0;
     right: 0;
     margin: auto; }
-    /* line 89, src/styles/app.scss */
+    /* line 97, src/styles/app.scss */
     .wrapper-bgr span:after {
       content: '';
       width: 1px;
@@ -503,10 +505,10 @@ body {
       left: calc(25% + 8px);
       top: 0; }
       @media (min-width: 64em) {
-        /* line 89, src/styles/app.scss */
+        /* line 97, src/styles/app.scss */
         .wrapper-bgr span:after {
           left: calc(25% + 58px); } }
-    /* line 101, src/styles/app.scss */
+    /* line 109, src/styles/app.scss */
     .wrapper-bgr span:before {
       content: '';
       width: 1px;
@@ -516,10 +518,10 @@ body {
       right: calc(25% + 8px);
       top: 0; }
       @media (min-width: 64em) {
-        /* line 101, src/styles/app.scss */
+        /* line 109, src/styles/app.scss */
         .wrapper-bgr span:before {
           right: calc(25% + 58px); } }
-    /* line 113, src/styles/app.scss */
+    /* line 121, src/styles/app.scss */
     .wrapper-bgr span i {
       position: absolute;
       width: 1px;

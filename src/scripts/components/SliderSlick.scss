@@ -87,7 +87,7 @@
   width: 25px;
   @include breakpoint(tablet) {
     bottom: 64px;
-    left: 28px;
+    left: 18px;
     right: auto;
   }
   &__item{
@@ -99,12 +99,16 @@
     }
   }
   &__active{
+    display: inline-block;
     color: $blue;
     min-width: 16px;
+    text-align: center;
   }
   &__last{
+    display: inline-block;
     position: relative;
     min-width: 16px;
+    text-align: center;
     &:after{
       content: '/';
       position: absolute;

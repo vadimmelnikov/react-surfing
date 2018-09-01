@@ -120,9 +120,14 @@
   outline: 0;
   z-index: 4;
   background: transparent;
-  transition: opacity 0.2s;
+  transition: background-color 0.2s;
   &:hover{
-    opacity: 0.8;
+    &:before{
+      background-color: $black;
+    }
+    &:after{
+      background-color: $black;
+    }
   }
   @include breakpoint(tablet) {
     bottom: 52px;

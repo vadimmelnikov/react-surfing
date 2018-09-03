@@ -6,8 +6,8 @@ import picture2 from "../../../img/img2.jpg";
 import picture3 from "../../../img/img3.jpg";
 
 class SliderSlick extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             slideIndex: 0,
         };

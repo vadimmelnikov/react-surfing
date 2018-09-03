@@ -24,4 +24,4 @@ chrome-user-data
 *.swp
 *.swo
 
-public/main.bundle.js
+public/main.js

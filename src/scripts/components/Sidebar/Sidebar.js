@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Sidebar.scss";
-import twitter from "../../img/twitter.png";
-import tumblr from "../../img/tumblr.png";
-import vimeo from "../../img/vimeo.png";
+import twitter from "../../../img/twitter.png";
+import tumblr from "../../../img/tumblr.png";
+import vimeo from "../../../img/vimeo.png";
 
 class Sidebar extends React.Component {
     render() {

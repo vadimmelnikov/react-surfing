@@ -6,12 +6,11 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: ['babel-polyfill', path.resolve(__dirname, 'src/scripts/main.bundle.js')],
+        main: ['babel-polyfill', path.resolve(__dirname, 'src/scripts/main.js')],
     },
 
     resolve: {
         alias: {
-            UI: path.resolve(__dirname, 'src/UI/'),
             Styles: path.resolve(__dirname, 'src/styles/')
         }
     },

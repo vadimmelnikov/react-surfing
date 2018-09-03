@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./App.scss";
-import Header from "./Header";
-import SliderSlick from "./SliderSlick";
-import Sidebar from "./Sidebar";
-import PaypalButton from "./PaypalButton";
+import Header from "./Header/Header";
+import SliderSlick from "./SliderSlick/SliderSlick";
+import Sidebar from "./Sidebar/Sidebar";
+import PaypalButton from "./PaypalButton/PaypalButton";
 
 class App extends React.Component {
     render() {

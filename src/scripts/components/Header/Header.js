@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Header.scss";
-import Navigation from "./Navigation";
-import logo from "../../img/logo.png";
+import Navigation from "../Navigation/Navigation";
+import logo from "../../../img/logo.png";
 
 class Header extends React.Component {
     render() {

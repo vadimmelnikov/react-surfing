@@ -10,8 +10,6 @@ class SliderSlick extends React.Component {
         super(props);
         this.state = {
             slideIndex: 0,
-            updateCount: 0,
-            allSliders: 0
         };
         this.settings = {
             dots: false,
@@ -20,11 +18,6 @@ class SliderSlick extends React.Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
-            afterChange: () => {
-                this.setState(state => ({
-                    updateCount: state.updateCount + 1,
-                }))
-            },
             beforeChange: (current, next) => {
                 this.setState({
                     slideIndex: next,
